@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpertGesture">
+
+    <TextView
+        android:id="@+id/normal_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPERT GESTURE"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <VideoView
+        android:id="@+id/vv_expert_act"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_below="@id/normal_text_view"/>
+
+    <Button
+        android:id="@+id/btn_repeat"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vv_expert_act"
+        android:text="Repeat"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_practice"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vv_expert_act"
+        android:text="Practice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

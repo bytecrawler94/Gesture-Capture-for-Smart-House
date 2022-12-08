@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <com.tomer.fadingtextview.FadingTextView-->
+<!--        android:id="@+id/tv_hello"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:textAlignment="center"/>-->
+
+
+    <TextView
+        android:id="@+id/tv_gesture_selection_s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT GESTURE"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_hello"/>
+
+    <Spinner
+        android:id="@+id/spin_gesture_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gesture_selection_s1"
+        android:scrollbarSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SELECT GESTURE"
+        android:outlineSpotShadowColor="#8b3a3a"
+        android:outlineAmbientShadowColor="#8b3a3a"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_selectGestureAndMove"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_gesture_list"
+        android:text="Next"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
